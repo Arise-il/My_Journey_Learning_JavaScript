@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <button>9a</button>
+    <button class="button-9b" onclick="
+        changeInside();
+    ">9b</button>
+
+
+    <script>
+      function changeInside() {
+        document.querySelector('.button-9b').innerHTML = '9b done';
+      }
+    </script>
+  </body>
+</html>

@@ -44,7 +44,10 @@
       cartQuantity = 0;
       console.log('Cart was reset.');
       console.log(`Cart quantity: ${cartQuantity}`);
+      document.querySelector('.line').innerHTML = `Cart Quantity : ${cartQuantity}`;
     ">Reset Cart</button>
+
+    <p class="line">Cart Quantity : 0</p>
 
     <script>
       let cartQuantity = 0;
@@ -60,7 +63,9 @@
           cartQuantity += number;
           console.log(`Cart quantity: ${cartQuantity}`);
         }
+        document.querySelector('.line').innerHTML = `Cart Quantity : ${cartQuantity}`;
       }
+
     </script>
   </body>
 </html>

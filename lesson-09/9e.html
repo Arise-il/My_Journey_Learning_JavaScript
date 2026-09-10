@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <input class="js-input" onkeydown="
+        if (event.key === 'Enter')
+          printName();
+      ">
+      
+    <button onclick="
+      printName();
+    ">Submit</button>
+
+    <p  class="done">Your name is : ??</p>
+
+
+    <script>
+      function  enterKey(event) {
+        if (event === 'Enter')
+          printName();
+      }
+
+      function printName()
+      {
+        let inputElement = document.querySelector('.js-input');
+
+        document.querySelector('.done').innerHTML = `Your name is : ${inputElement.value}`;
+      }
+    </script>
+  </body>
+</html>

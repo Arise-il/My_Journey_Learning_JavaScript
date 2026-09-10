@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <input class="input-char" onkeyup="
+      printChar();
+      " type="text">
+      <p class="line"></p>
+
+
+    <script>
+      function printChar() {
+        let line = document.querySelector('.input-char');
+        document.querySelector('.line').innerHTML = `${line.value}`;
+      }
+    </script>
+  </body>
+</html>

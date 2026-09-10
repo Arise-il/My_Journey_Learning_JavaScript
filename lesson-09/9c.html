@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <button onclick="
+      chosen('Heads');
+      ">Heads</button>
+    <button onclick="
+      chosen('Tails');
+      ">Tails</button>
+    <p class="chosen"></p>
+
+
+    <script>
+      function chosen(type) {
+        if (type === 'Heads') {
+          document.querySelector('.chosen').innerHTML = 'You chose : Heads';
+        } else {
+          document.querySelector('.chosen').innerHTML = 'You chose : Tails';
+        }
+      }
+    </script>
+  </body>
+</html>
