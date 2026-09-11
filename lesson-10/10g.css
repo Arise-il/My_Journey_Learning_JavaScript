@@ -1,0 +1,16 @@
+.botton-style {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.is-toggled {
+  background-color: rgb(209, 209, 209);
+  color: black;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
