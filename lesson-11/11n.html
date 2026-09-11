@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      let result = {};
+      let noDub = [];
+      function countWords(words){
+        //check if the word in nodub if not add else skip, so there is no dublications in noDub
+        for (let i = 0; i < words.length; i++){
+          if (i === 0)
+            noDub.push(words[i]);
+          for (let j = 0; j < noDub.length; j++) {
+            if (words[i] === noDub[j])
+              break;
+            else if (j === (noDub.length - 1))
+              noDub.push(words[i]);
+          }
+        }
+        //put nodub words in result
+        for (let i = 0; i < noDub.length; i++){
+          result[noDub[i]] = 0;
+        }
+        //calculate how many time the words in nodub are in words
+        for (let j = 0; j < noDub.length; j++) {
+          for (let i = 0; i < words.length; i++) {
+            if (noDub[j] === words[i])
+              result[noDub[j]]++;
+          }
+        }
+      }
+
+      /* //smaller version of the function above
+      function countWords(words) {
+        const result = {};
+
+        for (let i = 0; i < words.length; i++) {
+          const word = words[i];
+
+          // result[word] adds/accesses a property using whatever is
+          // saved inside the 'word' variable.
+          // If word = 'apple', result[word] will do result['apple']
+          // If word = 'grape', result[word] will do result['grape']
+          if (!result[word]) {
+            result[word] = 1;
+          } else {
+            result[word]++;
+          }
+        }
+
+        return result;
+      }
+      */
+
+      countWords(['apple', 'grape', 'apple', 'apple', 'grape']);
+      console.log(result);
+    </script>
+  </body>
+</html>

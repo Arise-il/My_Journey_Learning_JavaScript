@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function getSwap(array) {
+        let tmp = array[0];
+        array[0] = array[array.length - 1];
+        array[array.length - 1] = tmp;
+        return (array);
+      }
+      console.log(getSwap([1, 20, 22, 24, 5]));
+      console.log(getSwap(['hi', 'hello', 'good']));
+    </script>
+  </body>
+</html>

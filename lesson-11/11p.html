@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function searchArray(array, search) {
+        let result = -1;
+        for(let i = 0; i < array.length; i++){
+          if (array[i] === search){
+            result = i;
+            break;
+          }
+        }
+        if (result !== -1)
+          console.log(result);
+        else
+          console.log(-1);
+      }
+
+      searchArray(['hello', 'word', 'search', 'good', 'search'], 'search');
+      searchArray(['not', 'found'], 'search');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      let obj = {
+          min: '',
+          max: ''
+        };
+      function minMax(nums) {
+        for (let i = 1; i < nums.length; i++){
+          if (nums[i] > nums[i - 1]){
+            obj.max = nums[i];
+          }
+          else if (nums[i] < nums[i - 1]){
+            obj.min = nums[i];
+          }
+        }
+        return obj;
+      }
+      let result;
+      result = minMax([1, -3, 5]);
+      console.log(result);
+      result = minMax([-2, 3, -5, 7, 10]);
+      console.log(result);
+    </script>
+  </body>
+</html>
