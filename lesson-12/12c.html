@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button class="js-button" onclick="
+      setTimeout(button, 1000);
+      ">Finish</button>
+    <script>
+      let button = function switchButton()
+      {
+        let buttonElement = document.querySelector('.js-button');
+        buttonElement.innerHTML = 'Finished!!';
+      }
+      
+    </script>
+  </body>
+</html>

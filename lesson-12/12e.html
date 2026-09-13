@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button class="js-button" onclick="
+      showText();
+      ">Add to Cart</button>
+      <p class="text"></p>
+    <script>
+      function showText(){
+        let lineElement = document.querySelector('.text');
+        lineElement.innerHTML = 'Added';
+        setTimeout(() => {
+          let lineElement = document.querySelector('.text');
+          lineElement.innerHTML = '';
+        }, 2000);
+      }
+      
+    </script>
+  </body>
+</html>

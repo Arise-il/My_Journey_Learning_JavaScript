@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      (2) New messages
+    </title>
+  </head>
+  <body>
+    <button onclick="
+      titleChange(1);
+      ">add</button>
+    <button onclick="
+    titleChange(-1);
+    ">remove</button>
+    
+    <script>
+      let number = 2;
+      function titleChange(num) {
+        number += num;
+        console.log(number);
+        document.title = `(${number}) New messages`;
+      }
+    </script>      
+  </body>
+</html>

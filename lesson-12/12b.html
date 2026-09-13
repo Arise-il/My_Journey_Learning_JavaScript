@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    
+    <script>
+      function runTwice(fun) {
+        fun();
+        fun();
+      }
+      const add = function () {
+        console.log(2 +3);
+      };
+      runTwice(add);
+      runTwice(function() { console.log('12b')});
+    </script>
+  </body>
+</html>

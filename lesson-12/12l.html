@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      App
+    </title>
+  </head>
+  <body>
+    <script>
+      let number;
+      const countPositive = array => {
+        number = 0;
+        array.forEach((value) => { 
+          if (value >= 0) 
+            number++;
+        });
+      }
+      countPositive([1, -2, 2]);
+      console.log(number);
+      countPositive([1, -2, 2, -43, 32, 1, -2, 2]);
+      console.log(number);
+
+
+    </script>      
+  </body>
+</html>

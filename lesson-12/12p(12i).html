@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      App
+    </title>
+  </head>
+  <body>
+    <button onclick="
+      titleChange(1);
+      ">add</button>
+    <button onclick="
+      titleChange(-1);
+    ">remove</button>
+    
+    <script>
+      let number = 0;
+      const titleChange = (num) => {
+        number += num;
+        if (number > 0){
+          console.log(number);
+          document.title = `(${number}) New messages`;
+        } else {
+          document.title = `App`;
+          number = 0;
+          console.log(number);
+        }
+      }
+    </script>      
+  </body>
+</html>
